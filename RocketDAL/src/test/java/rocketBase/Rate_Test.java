@@ -24,7 +24,9 @@ public class Rate_Test {
 		System.out.println ("Rates size: " + rates.size());
 		assert(rates.size() > 0);
 		
-		assert(1==1);
-	}
+		assertEquals(rates.get(0).getdInterestRate(),3.5, 0.001);
+		assertEquals(rates.get(0).getiMinCreditScore(), 800);
+		}
+	
 
 }
